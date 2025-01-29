@@ -326,3 +326,12 @@ img{
 .active{
     background-color: #575757;
 }
+#about {
+    width: 70%; /* Take up full width */
+    height: 100vh; /* Full height */
+    display: flex; /* Flexbox container */
+    float: right;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align horizontally */
+    justify-content: center; /* Center content vertically */
+}
