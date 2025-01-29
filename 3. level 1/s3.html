@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lazy Lina</title>
+
+    <!-- Link to Font Awesome CDN for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>  
+    <div class="main" style="margin:0 0 0 auto; float: none;">
+        <h1 style="margin:0 auto">3. Lazy Lina</h1>
+    </div>
+</header>
+
+<div class="main">
+    <div class="content">
+        <!-- Story Frame -->
+        <div class="story-frame">
+            <div class="image-container">
+                <img src="https://res.cloudinary.com/rabzid/image/upload/v1737481358/Level1/s3/DALL_E_2025-01-21_19.41.01_-_A_young_girl_named_Lina_in_a_cozy_bedroom_still_in_bed_with_a_peaceful_expression._The_sun_is_shining_through_the_window_and_her_mother_is_calling_f_gmxhan.webp"
+                    alt="Story Image">
+                    <!-- Read Aloud Icons -->
+            <div class="read-aloud-icons">
+                <i class="fas fa-volume-up" title="British Accent" onclick="readAloud('https://res.cloudinary.com/rabzid/video/upload/v1737482225/Level1/s3/s3Br_pktuvp.mp3', 'br')"></i>
+                <i class="fas fa-volume-up" title="American Accent" onclick="readAloud('https://res.cloudinary.com/rabzid/video/upload/v1737482225/Level1/s3/s3Am_ew6tja.mp3', 'am')"></i>
+            </div>
+            <!-- Text Section -->
+            <div>
+                <p>     Lina loved staying in her cozy bed. Every morning, when the sun came up, her mom would call, “Lina, it’s time to wake up!” But Lina didn’t like getting up early. She would stay in bed and say, “Just five more minutes!”
+
+    One day, Lina was very lazy and didn’t wake up on time. She was late for school! When she arrived, she missed her favorite storytime. Lina felt sad.
+                    
+    The next morning, Lina remembered how she felt. She told herself, “I don’t want to miss fun things because I’m lazy!” So, she got out of bed quickly when her mom called. At school, she was on time, played with her friends, and learned many new things. Lina felt happy and proud.
+                    
+    From that day, Lina always tried to wake up early. She learned that being on time made her day better!
+                </p>
+                <br>
+                <hr>
+                <br>
+                <p class="arabic">    كانت لينَا تحب البقاء في سريرها المريح، ففي كل صباح، عندما تشرق الشمس، كانت أمها تنادي: "لينَا، حان وقت الاستيقاظ!" لكن لينَا لم تكن تحب الاستيقاظ مبكرًا. فكانت تبقى في السرير وتقول: "فقط خمس دقائق أخرى!"
+
+    وفي يوم من الأيام، كانت لينَا كسولة جدًا ولم تستيقظ في الوقت المحدد. فتأخرت عن المدرسة! وعندما وصلت، فاتتها قصتها المفضلة في وقت القصة. فشعرت لينَا بالحزن.
+
+    وفي الصباح التالي، تذكرت لينَا كيف شعرت. وقالت لنفسها: "لا أريد أن تفوتني الأشياء الممتعة بسبب كسلي!" لذا، استيقظت بسرعة عندما نادت أمها. وفي المدرسة، وصلت في الوقت المحدد، ولعبت مع أصدقائها، وتعلمت أشياء جديدة. فشعرت لينَا بالسعادة والفخر.
+
+    ومنذ ذلك اليوم، حاولت لينَا دائمًا الاستيقاظ مبكرًا. وتعلمت أن التواجد في الوقت المحدد يجعل يومها أفضل!
+            </div>
+            </div>
+        </div>
+
+        <!-- Questions Section (Personality Test Style) -->
+        <!-- Questions Section (Personality Test Style) -->
+        <div class="questions">
+            <h3>Quiz Questions</h3>
+            <form id="quiz-form">
+                <!-- Question 1 -->
+                <div class="question-group">
+                    <legend>1. What did Lina love to do in the morning?</legend>
+                    <input type="radio" name="q1" id="q1-a1" class="wrong" value="0" />
+                    <label for="q1-a1"><span>Wake up early</span></label>
+
+                    <input type="radio" name="q1" id="q1-a2" class="right" value="1" />
+                    <label for="q1-a2"><span>Stay in her cozy bed</span></label>
+
+                    <input type="radio" name="q1" id="q1-a3" class="wrong" value="0" />
+                    <label for="q1-a3"><span>Go outside to play</span></label>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question-group">
+                    <legend>2. Why did Lina feel sad one day?</legend>
+                    <input type="radio" name="q2" id="q2-a1" class="wrong" value="0" />
+                    <label for="q2-a1"><span>She lost her lunchbox</span></label>
+
+                    <input type="radio" name="q2" id="q2-a2" class="right" value="1" />
+                    <label for="q2-a2"><span>She was late for school and missed storytime</span></label>
+
+                    <input type="radio" name="q2" id="q2-a3" class="wrong" value="0" />
+                    <label for="q2-a3"><span>She forgot to bring her homework</span></label>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question-group">
+                    <legend>3. What did Lina decide to do after feeling sad?</legend>
+                    <input type="radio" name="q3" id="q3-a1" class="wrong" value="0" />
+                    <label for="q3-a1"><span>Sleep even longer</span></label>
+
+                    <input type="radio" name="q3" id="q3-a2" class="wrong" value="0" />
+                    <label for="q3-a2"><span>Skip school the next day</span></label>
+
+                    <input type="radio" name="q3" id="q3-a3" class="right" value="1" />
+                    <label for="q3-a3"><span>Wake up early to be on time</span></label>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question-group">
+                    <legend>4. What lesson did Lina learn?</legend>
+                    <input type="radio" name="q4" id="q4-a1" class="right" value="1" />
+                    <label for="q4-a1"><span>Being on time makes the day better</span></label>
+
+                    <input type="radio" name="q4" id="q4-a2" class="wrong" value="0" />
+                    <label for="q4-a2"><span>Sleeping late is fun</span></label>
+
+                    <input type="radio" name="q4" id="q4-a3" class="wrong" value="0" />
+                    <label for="q4-a3"><span>School is boring</span></label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="button" onclick="evaluateScore()">Submit</button>
+            </form>
+            <div id="result"></div>
+        </div>
+        
+    </div>  
+</div>
+<!-- Hamburger Menu -->
+<div class="menu" id="menu">
+    <div class="category" onclick="toggleCategory(this)">
+        <span>Beginner Level</span> <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="subcategories" id="bigenners_category" style="display: none;">
+        <a href="s1.html">1. The little bird and the storm</a>
+        <a href="s2.html">2. Amera's Garden</a>
+        <a href="s3.html" class="active">3. Lazy Lina</a>
+        <a href="s4.html">4. Timmy and the Rainbow</a>
+        <a href="s5.html">5. Billa's big balloon</a>
+        <a href="s6.html">6. Jenny’s New Shoes</a>
+        <a href="s6.html">7. The Sleepy Puppy</a>
+        <a href="s8.html">8. Daisy finds a friend</a>
+        <a href="s4.html">9. Sammy the Shy Snail</a>
+        <a href="s4.html">10. The Lost Teddy Bear</a>
+    </div>
+
+    <div class="category" onclick="toggleCategory(this)">
+        <span>Intermediate Level</span> <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="subcategories" id="intermediate_category"  style="display: none;">
+        <a href="#">Option 1</a>
+        <a href="#">Option 2</a>
+    </div>
+    
+    <div class="category" onclick="toggleCategory(this)">
+        <span>Level 1</span> <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="subcategories" id="advanced_category"  style="display: none;">
+        <a href="s1.html">1. The little bird and the storm</a>
+        <a href="s2.html">2. Amera's Garden</a>
+        <a href="s3.html" class="active">3. Lazy Lina</a>
+        <a href="s4.html">4. Timmy and the Rainbow</a>
+        <a href="s5.html">5. Billa's big balloon</a>
+        <a href="s6.html">6. Jenny’s New Shoes</a>
+        <a href="s6.html">7. The Sleepy Puppy</a>
+        <a href="s8.html">8. Daisy finds a friend</a>
+        <a href="s4.html">9. Sammy the Shy Snail</a>
+        <a href="s4.html">10. The Lost Teddy Bear</a>
+    </div>
+</div>
+
+<script src="../JS/main.js"></script>
+</body>
+</html>

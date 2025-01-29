@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Sleepy Puppy</title>
+
+    <!-- Link to Font Awesome CDN for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>  
+    <div class="main" style="margin:0 0 0 auto; float: none;">
+        <h1 style="margin:0 auto">7. The Sleepy Puppy</h1>
+    </div>
+</header>
+
+<div class="main">
+    <div class="content">
+        <!-- Story Frame -->
+        <div class="story-frame">
+            <div class="image-container">
+                <img src="https://res.cloudinary.com/rabzid/image/upload/v1737488951/Level1/s7/DALL_E_2025-01-21_21.06.02_-_A_cute_fluffy_puppy_sleeping_on_a_cozy_blanket_by_a_sunny_window_with_warm_sunlight_streaming_in._In_the_background_a_playful_kitten_is_trying_to_w_hp71uj.webp"
+                    alt="Story Image">
+                    <!-- Read Aloud Icons -->
+            <div class="read-aloud-icons">
+                <i class="fas fa-volume-up" title="British Accent" onclick="readAloud('https://res.cloudinary.com/rabzid/video/upload/v1737488952/Level1/s7/s7Br_iog7vi.mp3', 'br')"></i>
+                <i class="fas fa-volume-up" title="American Accent" onclick="readAloud('https://res.cloudinary.com/rabzid/video/upload/v1737488950/Level1/s7/s4Am_oghpyr.mp3', 'am')"></i>
+            </div>
+            
+            <!-- Text Section -->
+            <div>
+                <p>    Max was a little puppy who loved to sleep. Every morning, his mom would say, “Max, it’s time to wake up!” But Max didn’t like waking up. He would close his eyes and say, “Just five more minutes!”
+
+One day, Max slept all day long. His friends, Mia the cat, Bella the bunny, and Charlie the squirrel, came to play. They called, “Max, come play with us!” But Max stayed in bed and said, “Maybe later.”
+                    
+When Max woke up, the sun was setting, and his friends were gone. He felt sad.
+                    
+The next day, Mia came to him again. She said, “Max, will you play today?” Max wagged his tail and said, “Yes, I will!”
+
+Max ran outside and played with his friends. He chased butterflies, rolled in the grass, and had so much fun.
+                </p>
+                <br>
+                <hr>
+                <br>
+                <p class="arabic">    كان ماكس جروًا صغيرًا يحب النوم.  فكانت تقول له أمه كل صباح: "ماكس، حان وقت الاستيقاظ!"، لكن ماكس لم يكن يحب الاستيقاظ، فكان يغلق عينيه ويقول: "فقط خمس دقائق أخرى!"
+
+    وفي يوم من الأيام، نام ماكس طوال اليوم. وجاء أصدقاؤه، ميا القطة، وبيلا الأرنب، وتشارلي السنجاب، للعب. وكانوا ينادونه: "ماكس، تعال العب معنا!" لكن ماكس بقي في سريره وقال: "ربما لاحقًا.".
+
+    وعندما استيقظ ماكس، كانت الشمس تغرب، وكان أصدقاؤه قد غادروا. فشعر بالحزن.
+                    
+    في اليوم التالي، جاءت ميا إليه مرة أخرى. وقالت: "ماكس، هل ستلعب اليوم؟" لوّح ماكس بذيله وقال: "نعم، سأفعل!"
+
+    ركض ماكس إلى الخارج ولعب مع أصدقائه. حيث طارد الفراشات، وتدحرج على العشب، واستمتع كثيرًا.   
+                </p>
+            </div>
+            </div>
+        </div>
+
+        <!-- Questions Section (Personality Test Style) -->
+        <!-- Questions Section (Personality Test Style) -->
+        <div class="questions">
+            <h3>Quiz Questions</h3>
+            <form id="quiz-form">
+                <!-- Question 1 -->
+                <div class="question-group">
+                    <legend>1. What did Max love to do?</legend>
+                    <input type="radio" name="q1" id="q1-a1" class="wrong" value="0" />
+                    <label for="q1-a1"><span>Play outside</span></label>
+
+                    <input type="radio" name="q1" id="q1-a2" class="right" value="1" />
+                    <label for="q1-a2"><span>Sleep</span></label>
+
+                    <input type="radio" name="q1" id="q1-a3" class="wrong" value="0" />
+                    <label for="q1-a3"><span>Chase birds</span></label>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question-group">
+                    <legend>2. Why did Max feel sad?</legend>
+                    <input type="radio" name="q2" id="q2-a1" class="wrong" value="0" />
+                    <label for="q2-a1"><span>He lost his favorite toy</span></label>
+
+                    <input type="radio" name="q2" id="q2-a2" class="wrong" value="0" />
+                    <label for="q2-a2"><span>He got stuck in the house</span></label>
+
+                    <input type="radio" name="q2" id="q2-a3" class="right" value="1" />
+                    <label for="q2-a3"><span>He missed playing with his friends</span></label>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question-group">
+                    <legend>3. What did Mia ask Max the next day?</legend>
+                    <input type="radio" name="q3" id="q3-a1" class="wrong" value="0" />
+                    <label for="q3-a1"><span>"Do you want to sleep all day?"</span></label>
+
+                    <input type="radio" name="q3" id="q3-a2" class="right" value="1" />
+                    <label for="q3-a2"><span>"Will you play today?"</span></label>
+
+                    <input type="radio" name="q3" id="q3-a3" class="wrong" value="0" />
+                    <label for="q3-a3"><span>"Where is your ball?"s</span></label>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question-group">
+                    <legend>4. What did Max do when he played with his friends?</legend>
+                    <input type="radio" name="q4" id="q4-a1" class="right" value="1" />
+                    <label for="q4-a1"><span>Chased butterflies and rolled in the grass</span></label>
+
+                    <input type="radio" name="q4" id="q4-a2" class="wrong" value="0" />
+                    <label for="q4-a2"><span>Took a nap under a tree</span></label>
+
+                    <input type="radio" name="q4" id="q4-a3" class="wrong" value="0" />
+                    <label for="q4-a3"><span>Went on a long trip</span></label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="button" onclick="evaluateScore()">Submit</button>
+            </form>
+            <div id="result"></div>
+        </div>
+        
+    </div>  
+</div>
+<!-- Hamburger Menu -->
+<div class="menu" id="menu">
+    <div class="category" onclick="toggleCategory(this)">
+        <span>Preliminary 1</span> <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="subcategories" id="bigenners_category" style="display: none;">
+        <a href="../1. Preliminary level 1/s1.html">1.  The Bunny and the Carrot</a>
+        <a href="../1. Preliminary level 1/s2.html">2. The Cat and the Ball</a>
+        <a href="../1. Preliminary level 1/s3.html">3. The Bird and the Nest</a>
+        <a href="../1. Preliminary level 1/s4.html">4. The Golden Fish</a>
+        <a href="../1. Preliminary level 1/s5.html">5. The Butterfly and the Flowers</a>
+        <a href="../1. Preliminary level 1/s6.html">6. The Little Train</a>
+        <a href="../1. Preliminary level 1/s7.html">7. The Dog and the Bone</a>
+        <a href="../1. Preliminary level 1/s8.html">8. The Duck and the Water</a>
+        <a href="../1. Preliminary level 1/s9.html">9. The Moon and the Stars</a>
+        <a href="../1. Preliminary level 1/s10.html">10. The Little Bird</a>
+    </div>
+
+    <div class="category" onclick="toggleCategory(this)">
+        <span>Preliminary 2</span> <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="subcategories" id="intermediate_category"  style="display: none;">
+        <a href="../2. Preliminary level 2/s1.html">1.  The Bunny and the Carrot</a>
+        <a href="../2. Preliminary level 2/s2.html">2. The Cat and the Ball</a>
+        <a href="../2. Preliminary level 2/s3.html">3. The Bird and the Nest</a>
+        <a href="../2. Preliminary level 2/s4.html">4. The Golden Fish</a>
+        <a href="../2. Preliminary level 2/s5.html">5. The Butterfly and the Flowers</a>
+        <a href="../2. Preliminary level 2/s6.html">6. The Little Train</a>
+        <a href="../2. Preliminary level 2/s7.html">7. The Dog and the Bone</a>
+        <a href="../2. Preliminary level 2/s8.html">8. The Duck and the Water</a>
+        <a href="../2. Preliminary level 2/s9.html">9. The Moon and the Stars</a>
+        <a href="../2. Preliminary level 2/s10.html">10. The Little Bird</a>
+    </div>
+    
+    <div class="category" onclick="toggleCategory(this)">
+        <span>Level 1</span> <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="subcategories" id="advanced_category"  style="display: none;">
+        <a href="s1.html">1. The little bird and the storm</a>
+        <a href="s2.html">2. Amera's Garden</a>
+        <a href="s3.html">3. Lazy Lina</a>
+        <a href="s4.html">4. Timmy and the Rainbow</a>
+        <a href="s5.html">5. Bella's big balloon</a>
+        <a href="s6.html">6. Jenny’s New Shoes</a>
+        <a href="s7.html" class="active">7. The Sleepy Puppy</a>
+        <a href="s8.html">8. Daisy finds a friend</a>
+        <a href="s9.html">9. Sammy the Shy Snail</a>
+        <a href="s10.html">10. The Lost Teddy Bear</a>
+    </div>
+</div>
+
+<script src="../JS/main.js"></script>
+</body>
+</html>

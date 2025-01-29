@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Butterfly and the Flowers</title>
+
+    <!-- Link to Font Awesome CDN for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>  
+    <div class="main" style="margin:0 0 0 auto; float: none;">
+        <h1 style="margin:0 auto">5. The Butterfly and the Flowers</h1>
+    </div>
+</header>
+
+<div class="main">
+    <div class="content">
+        <!-- Story Frame -->
+        <div class="story-frame">
+            <div class="image-container">
+                <img src="https://res.cloudinary.com/rabzid/image/upload/v1738063504/Preliminary%20Level/s5/5_modgor.png"
+                    alt="Story Image">
+                    <!-- Read Aloud Icons -->
+            <div class="read-aloud-icons">
+                <i class="fas fa-volume-up" title="British Accent" onclick="readAloud('https://res.cloudinary.com/rabzid/video/upload/v1738065625/Preliminary%20Level/s5/s5Br_ob8bmj.mp3', 'br')"></i>
+                <i class="fas fa-volume-up" title="American Accent" onclick="readAloud('https://res.cloudinary.com/rabzid/video/upload/v1738065625/Preliminary%20Level/s5/s5Am_mnx3s8.mp3', 'am')"></i>
+            </div>
+
+            <!-- Text Section -->
+            <div>
+                <p>A colorful butterfly was flying in the garden. It saw many pretty flowers. The butterfly landed on a red flower. The flower smelled very nice. The butterfly said, "I love this flower!" Then it flew to a yellow flower. The yellow flower was big and bright. The butterfly sat there for a while. It flapped its wings happily. The butterfly loved flying and visiting flowers every day.
+                </p>
+                <br>
+                <hr>
+                <br>
+                <p class="arabic">كانت هناك فراشة ملونة تطير في الحديقة، فرأت العديد من الزهور الجميلة، وهبطت الفراشة على زهرة حمراء. كانت الزهرة رائحتها جميلة جدًا، فقالت الفراشة: "أحب هذه الزهرة!" ثم طارت إلى زهرة صفراء، وقد كانت الزهرة الصفراء كبيرة ومشرقة، فجلست الفراشة هناك لبعض الوقت، ورفرفت بأجنحتها بسعادة، فقد كانت الفراشة تحب الطيران وزيارة الزهور كل يوم.
+                </p>
+            </div>
+            </div>
+        </div>
+
+        <!-- Questions Section (Personality Test Style) -->
+        <!-- Questions Section (Personality Test Style) -->
+        <div class="questions">
+            <h3>Quiz Questions</h3>
+            <form id="quiz-form">
+                <!-- Question 1 -->
+                <div class="question-group">
+                    <legend>1. Where was the butterfly flying?</legend>
+                    <input type="radio" name="q1" id="q1-a1" class="wrong" value="0" />
+                    <label for="q1-a1"><span>In the field.</span></label>
+
+                    <input type="radio" name="q1" id="q1-a2" class="wrong" value="0" />
+                    <label for="q1-a2"><span>In the farm.</span></label>
+
+                    <input type="radio" name="q1" id="q1-a3" class="right" value="1" />
+                    <label for="q1-a3"><span>In the garden.</span></label>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question-group">
+                    <legend>2. What did the butterfly see in the garden?</legend>
+                    <input type="radio" name="q2" id="q2-a1" class="wrong" value="0" />
+                    <label for="q2-a1"><span>Other butterflies.</span></label>
+
+                    <input type="radio" name="q2" id="q2-a2" class="right" value="1" />
+                    <label for="q2-a2"><span>Many pretty flowers.</span></label>
+
+                    <input type="radio" name="q2" id="q2-a3" class="wrong" value="0" />
+                    <label for="q2-a3"><span>A lot of birds.</span></label>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question-group">
+                    <legend>3. The butterfly said, "I love this flower!". Which flower was it?</legend>
+                    <input type="radio" name="q3" id="q3-a1" class="right" value="1" />
+                    <label for="q3-a1"><span>The red flower.</span></label>
+
+                    <input type="radio" name="q3" id="q3-a2" class="wrong" value="0" />
+                    <label for="q3-a2"><span>The yellow flower.</span></label>
+
+                    <input type="radio" name="q3" id="q3-a3" class="wrong" value="0" />
+                    <label for="q3-a3"><span>The purple flower.</span></label>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question-group">
+                    <legend>4. The butterfly loved ............ every day.</legend>
+                    <input type="radio" name="q4" id="q4-a1" class="right" value="1" />
+                    <label for="q4-a1"><span>flying and visiting flowers</span></label>
+
+                    <input type="radio" name="q4" id="q4-a2" class="wrong" value="0" />
+                    <label for="q4-a2"><span>visiting farms and gardens</span></label>
+
+                    <input type="radio" name="q4" id="q4-a3" class="wrong" value="0" />
+                    <label for="q4-a3"><span>playing with other butterflies</span></label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="button" onclick="evaluateScore()">Submit</button>
+            </form>
+            <div id="result"></div>
+        </div>
+        
+    </div>  
+</div>
+<!-- Hamburger Menu -->
+<div class="menu" id="menu">
+    <div class="category" onclick="toggleCategory(this)">
+        <span>Preliminary 1</span> <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="subcategories" id="bigenners_category" style="display: none;">
+        <a href="../1. Preliminary level 1/s1.html">1.  The Bunny and the Carrot</a>
+        <a href="../1. Preliminary level 1/s2.html">2.The Cat and the Ball</a>
+        <a href="../1. Preliminary level 1/s3.html">3. The Bird and the Nest</a>
+        <a href="../1. Preliminary level 1/s4.html">4. The Golden Fish</a>
+        <a href="../1. Preliminary level 1/s5.html">5. The Butterfly and the Flowers</a>
+        <a href="../1. Preliminary level 1/s6.html">6. The Little Train</a>
+        <a href="../1. Preliminary level 1/s7.html">7. The Dog and the Bone</a>
+        <a href="../1. Preliminary level 1/s8.html">8. The Duck and the Water</a>
+        <a href="../1. Preliminary level 1/s9.html">9. The Moon and the Stars</a>
+        <a href="../1. Preliminary level 1/s10.html">10. The Little Bird</a>
+    </div>
+
+    <div class="category" onclick="toggleCategory(this)">
+        <span>Preliminary 2</span> <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="subcategories" id="intermediate_category"  style="display: none;">
+        <a href="s1.html">1.  The Bunny and the Carrot</a>
+        <a href="s2.html">2.The Cat and the Ball</a>
+        <a href="s3.html">3. The Bird and the Nest</a>
+        <a href="s4.html">4. The Golden Fish</a>
+        <a href="s5.html" class="active">5. The Butterfly and the Flowers</a>
+        <a href="s6.html">6. The Little Train</a>
+        <a href="s7.html">7. The Dog and the Bone</a>
+        <a href="s8.html">8. The Duck and the Water</a>
+        <a href="s9.html">9. The Moon and the Stars</a>
+        <a href="s10.html">10. The Little Bird</a>
+    </div>
+    
+    <div class="category" onclick="toggleCategory(this)">
+        <span>Level1 </span> <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="subcategories" id="advanced_category"  style="display: none;">
+        <a href="../3. level 1/s1.html">1. The little bird and the storm</a>
+        <a href="../3. level 1/s2.html">2. Amera's Garden</a>
+        <a href="../3. level 1/s3.html">3. Lazy Lina</a>
+        <a href="../3. level 1/s4.html">4. Timmy and the Rainbow</a>
+        <a href="../3. level 1/s5.html">5. Billa's big balloon</a>
+        <a href="../3. level 1/s6.html">6. Jenny’s New Shoes</a>
+        <a href="../3. level 1/s7.html">7. The Sleepy Puppy</a>
+        <a href="../3. level 1/s8.html">8. Daisy finds a friend</a>
+        <a href="../3. level 1/s9.html">9. Sammy the Shy Snail</a>
+        <a href="../3. level 1/s10.html">10. The Lost Teddy Bear</a>
+    </div>
+</div>
+
+<script src="../JS/main.js"></script>
+</body>
+</html>

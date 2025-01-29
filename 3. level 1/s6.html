@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jenny’s New Shoes</title>
+
+    <!-- Link to Font Awesome CDN for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>  
+    <div class="main" style="margin:0 0 0 auto; float: none;">
+        <h1 style="margin:0 auto">6. Jenny’s New Shoes</h1>
+    </div>
+</header>
+
+<div class="main">
+    <div class="content">
+        <!-- Story Frame -->
+        <div class="story-frame">
+            <div class="image-container">
+                <img src="https://res.cloudinary.com/rabzid/image/upload/v1737940289/Level1/s6/DALL_E_2025-01-27_03.11.08_-_A_cheerful_young_girl_named_Jenny_wearing_bright_pink_shoes_with_sparkly_stars_on_them._She_is_running_joyfully_in_a_cozy_colorful_living_room_showi_fjpa9u.webp"
+                    alt="Story Image">
+                    <!-- Read Aloud Icons -->
+            <div class="read-aloud-icons">
+                <i class="fas fa-volume-up" title="British Accent" onclick="readAloud('https://res.cloudinary.com/rabzid/video/upload/v1737940235/Level1/s6/s6Br_plj2s9.mp3', 'br')"></i>
+                <i class="fas fa-volume-up" title="American Accent" onclick="readAloud('https://res.cloudinary.com/rabzid/video/upload/v1737940235/Level1/s6/s6Am_s8cwxa.mp3', 'am')"></i>
+            </div>
+
+            <!-- Text Section -->
+            <div>
+                <p>    Jenny was so happy because she got a new pair of shoes. They were bright pink with sparkly stars on them. Jenny put on her shoes and ran around the house to show them to her mom. “Look, mom! My new shoes are so pretty!” she said. Her mom smiled and said, “They look wonderful!” Jenny wore her new shoes to school the next day. All her friends said they liked her shoes, and Jenny felt proud. She couldn’t wait to wear them again.
+                </p>
+                <br>
+                <hr>
+                <br>
+                <p class="arabic">    كانت جيني سعيدة جدًا لأنها حصلت على زوج جديد من الأحذية. وكانت الأحذية زهرية لامعة عليها نجوم متلألئة. حيث ارتدت جيني حذاءها وركضت حول المنزل لتريه لوالدتها. قالت: "انظري، أمي! حذائي الجديد جميل جدًا!" ابتسمت والدتها وقالت: "إنه يبدو رائعًا!"
+ارتدت جيني حذاءها الجديد إلى المدرسة في اليوم التالي. وقال جميع أصدقائها إن حذاءها،يعجبهم فشعرت جيني بالفخر. ولم تستطع الانتظار لترتديه مرة أخرى.   
+                </p>
+            </div>
+            <!-- Read Aloud Icons -->
+            </div>
+        </div>
+
+        <!-- Questions Section (Personality Test Style) -->
+        <!-- Questions Section (Personality Test Style) -->
+        <div class="questions">
+            <h3>Quiz Questions</h3>
+            <form id="quiz-form">
+                <!-- Question 1 -->
+                <div class="question-group">
+                    <legend>1. Why was Jenny happy?</legend>
+                    <input type="radio" name="q1" id="q1-a1" class="wrong" value="0" />
+                    <label for="q1-a1"><span>She got a new dress</span></label>
+
+                    <input type="radio" name="q1" id="q1-a2" class="right" value="1" />
+                    <label for="q1-a2"><span>She got a new pair of shoes</span></label>
+
+                    <input type="radio" name="q1" id="q1-a3" class="wrong" value="0" />
+                    <label for="q1-a3"><span>She got a new toy</span></label>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question-group">
+                    <legend>2. What did Jenny’s new shoes look like?</legend>
+                    <input type="radio" name="q2" id="q2-a1" class="right" value="1" />
+                    <label for="q2-a1"><span>Bright pink with sparkly stars</span></label>
+
+                    <input type="radio" name="q2" id="q2-a2" class="wrong" value="0" />
+                    <label for="q2-a2"><span>Blue with white stripes</span></label>
+
+                    <input type="radio" name="q2" id="q2-a3" class="wrong" value="0" />
+                    <label for="q2-a3"><span>Green with polka dots</span></label>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question-group">
+                    <legend>3. What did Jenny do after getting her new shoes?</legend>
+                    <input type="radio" name="q3" id="q3-a1" class="right" value="1" />
+                    <label for="q3-a1"><span>She ran around the house to show her mom</span></label>
+
+                    <input type="radio" name="q3" id="q3-a2" class="wrong" value="0" />
+                    <label for="q3-a2"><span>She put them in her closet</span></label>
+
+                    <input type="radio" name="q3" id="q3-a3" class="wrong" value="0" />
+                    <label for="q3-a3"><span>She gave them to her friend</span></label>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question-group">
+                    <legend>4. How did Jenny feel when her friends liked her shoes?</legend>
+                    <input type="radio" name="q4" id="q4-a1" class="wrong" value="0" />
+                    <label for="q4-a1"><span>Shy</span></label>
+
+                    <input type="radio" name="q4" id="q4-a2" class="wrong" value="0" />
+                    <label for="q4-a2"><span>Sad</span></label>
+
+                    <input type="radio" name="q4" id="q4-a3" class="right" value="1" />
+                    <label for="q4-a3"><span>Proud</span></label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="button" onclick="evaluateScore()">Submit</button>
+            </form>
+            <div id="result"></div>
+        </div>
+        
+    </div>  
+</div>
+<!-- Hamburger Menu -->
+<div class="menu" id="menu">
+    <div class="category" onclick="toggleCategory(this)">
+        <span>Preliminary 1</span> <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="subcategories" id="bigenners_category" style="display: none;">
+        <a href="../1. Preliminary level 1/s1.html">1.  The Bunny and the Carrot</a>
+        <a href="../1. Preliminary level 1/s2.html">2. The Cat and the Ball</a>
+        <a href="../1. Preliminary level 1/s3.html">3. The Bird and the Nest</a>
+        <a href="../1. Preliminary level 1/s4.html">4. The Golden Fish</a>
+        <a href="../1. Preliminary level 1/s5.html">5. The Butterfly and the Flowers</a>
+        <a href="../1. Preliminary level 1/s6.html">6. The Little Train</a>
+        <a href="../1. Preliminary level 1/s7.html">7. The Dog and the Bone</a>
+        <a href="../1. Preliminary level 1/s8.html">8. The Duck and the Water</a>
+        <a href="../1. Preliminary level 1/s9.html">9. The Moon and the Stars</a>
+        <a href="../1. Preliminary level 1/s10.html">10. The Little Bird</a>
+    </div>
+
+    <div class="category" onclick="toggleCategory(this)">
+        <span>Preliminary 2</span> <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="subcategories" id="intermediate_category"  style="display: none;">
+        <a href="../2. Preliminary level 2/s1.html">1.  The Bunny and the Carrot</a>
+        <a href="../2. Preliminary level 2/s2.html">2. The Cat and the Ball</a>
+        <a href="../2. Preliminary level 2/s3.html">3. The Bird and the Nest</a>
+        <a href="../2. Preliminary level 2/s4.html">4. The Golden Fish</a>
+        <a href="../2. Preliminary level 2/s5.html">5. The Butterfly and the Flowers</a>
+        <a href="../2. Preliminary level 2/s6.html">6. The Little Train</a>
+        <a href="../2. Preliminary level 2/s7.html">7. The Dog and the Bone</a>
+        <a href="../2. Preliminary level 2/s8.html">8. The Duck and the Water</a>
+        <a href="../2. Preliminary level 2/s9.html">9. The Moon and the Stars</a>
+        <a href="../2. Preliminary level 2/s10.html">10. The Little Bird</a>
+    </div>
+    
+    <div class="category" onclick="toggleCategory(this)">
+        <span>Level 1</span> <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="subcategories" id="advanced_category"  style="display: none;">
+        <a href="s1.html">1. The little bird and the storm</a>
+        <a href="s2.html">2. Amera's Garden</a>
+        <a href="s3.html">3. Lazy Lina</a>
+        <a href="s4.html">4. Timmy and the Rainbow</a>
+        <a href="s5.html">5. Bella's big balloon</a>
+        <a href="s6.html" class="active">6. Jenny’s New Shoes</a>
+        <a href="s7.html">7. The Sleepy Puppy</a>
+        <a href="s8.html">8. Daisy finds a friend</a>
+        <a href="s9.html">9. Sammy the Shy Snail</a>
+        <a href="s10.html">10. The Lost Teddy Bear</a>
+    </div>
+</div>
+
+<script src="../JS/main.js"></script>
+</body>
+</html>

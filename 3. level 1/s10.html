@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Lost Teddy Bear</title>
+
+    <!-- Link to Font Awesome CDN for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>  
+    <div class="main" style="margin:0 0 0 auto; float: none;">
+        <h1 style="margin:0 auto">10. The Lost Teddy Bear</h1>
+    </div>
+</header>
+
+<div class="main">
+    <div class="content">
+        <!-- Story Frame -->
+        <div class="story-frame">
+            <div class="image-container">
+                <img src="https://res.cloudinary.com/rabzid/image/upload/v1737947500/Level1/s9/s10/DALL_E_2025-01-27_05.11.19_-_A_heartwarming_illustration_of_a_young_boy_searching_for_his_lost_teddy_bear_in_a_cozy_bedroom._The_boy_wearing_blue_pajamas_looks_under_the_bed_wh_gzexcj.webp"
+                    alt="Story Image">
+                    <!-- Read Aloud Icons -->
+            <div class="read-aloud-icons">
+                <i class="fas fa-volume-up" title="British Accent" onclick="readAloud('https://res.cloudinary.com/rabzid/video/upload/v1737947636/Level1/s9/s10/s10Br_qkcp9z.mp3', 'br')"></i>
+                <i class="fas fa-volume-up" title="American Accent" onclick="readAloud('https://res.cloudinary.com/rabzid/video/upload/v1737947637/Level1/s9/s10/s10Am_f5hxlg.mp3'), 'am'"></i>
+            </div>
+            
+            <!-- Text Section -->
+            <div>
+                <p>    Tommy loved his teddy bear very much. One day, he couldn’t find it anywhere.
+
+    He searched all over the house, under the bed, and even outside. He asked everyone, but no one had seen it.
+                    
+    Tommy felt sad without his teddy bear. He didn’t know where it could be.
+                    
+    Then, his sister found the teddy bear hidden in the laundry basket! Tommy was so happy to hold it again.
+                </p>
+                <br>
+                <hr>
+                <br>
+                <p class="arabic">    كان تومي يحب دميته كثيرًا، وفي يوم من الأيام، لم يتمكن من العثور عليها في أي مكان.
+
+    فبحث في كل أنحاء المنزل، تحت السرير، وحتى في الخارج، وسأل الجميع، ولكن لم يرها أحد.
+
+    فشعر تومي بالحزن دون دميته، ولم يكن يعرف أين يمكن أن تكون.
+                    
+    ثم، وجدت أخته الدمية مخبأة في سلة الغسيل! كان تومي سعيدًا جدًا عندما أمسك بها مجددًا. 
+                </p>
+            </div>
+            </div>
+        </div>
+
+        <!-- Questions Section (Personality Test Style) -->
+        <!-- Questions Section (Personality Test Style) -->
+        <div class="questions">
+            <h3>Quiz Questions</h3>
+            <form id="quiz-form">
+                <!-- Question 1 -->
+                <div class="question-group">
+                    <legend>1. Where did Tommy search for his teddy bear?</legend>
+                    <input type="radio" name="q1" id="q1-a1" class="right" value="1" />
+                    <label for="q1-a1"><span>Under the bed</span></label>
+
+                    <input type="radio" name="q1" id="q1-a2" class="wrong" value="0" />
+                    <label for="q1-a2"><span>In the kitchen</span></label>
+
+                    <input type="radio" name="q1" id="q1-a3" class="wrong" value="0" />
+                    <label for="q1-a3"><span>In the garden</span></label>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question-group">
+                    <legend>2. How did Tommy feel when he couldn't find his teddy bear?</legend>
+                    <input type="radio" name="q2" id="q2-a1" class="wrong" value="0" />
+                    <label for="q2-a1"><span>Happy</span></label>
+
+                    <input type="radio" name="q2" id="q2-a2" class="wrong" value="0" />
+                    <label for="q2-a2"><span>Excited</span></label>
+
+                    <input type="radio" name="q2" id="q2-a3" class="right" value="1" />
+                    <label for="q2-a3"><span>Sad</span></label>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question-group">
+                    <legend>3. Who found Tommy's teddy bear?</legend>
+                    <input type="radio" name="q3" id="q3-a1" class="wrong" value="0" />
+                    <label for="q3-a1"><span>Tommy’s father</span></label>
+
+                    <input type="radio" name="q3" id="q3-a2" class="right" value="1" />
+                    <label for="q3-a2"><span>Tommy’s sister</span></label>
+
+                    <input type="radio" name="q3" id="q3-a3" class="wrong" value="0" />
+                    <label for="q3-a3"><span>Tommy’s friend</span></label>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question-group">
+                    <legend>4. Where was the teddy bear hidden?</legend>
+                    <input type="radio" name="q4" id="q4-a1" class="right" value="1" />
+                    <label for="q4-a1"><span>In the laundry basket</span></label>
+
+                    <input type="radio" name="q4" id="q4-a2" class="wrong" value="0" />
+                    <label for="q4-a2"><span>In the cupboard</span></label>
+
+                    <input type="radio" name="q4" id="q4-a3" class="wrong" value="0" />
+                    <label for="q4-a3"><span>TUnder the pillow</span></label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="button" onclick="evaluateScore()">Submit</button>
+            </form>
+            <div id="result"></div>
+        </div>
+        
+    </div>  
+</div>
+<!-- Hamburger Menu -->
+<div class="menu" id="menu">
+    <div class="category" onclick="toggleCategory(this)">
+        <span>Preliminary 1</span> <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="subcategories" id="bigenners_category" style="display: none;">
+        <a href="../1. Preliminary level 1/s1.html">1.  The Bunny and the Carrot</a>
+        <a href="../1. Preliminary level 1/s2.html">2. The Cat and the Ball</a>
+        <a href="../1. Preliminary level 1/s3.html">3. The Bird and the Nest</a>
+        <a href="../1. Preliminary level 1/s4.html">4. The Golden Fish</a>
+        <a href="../1. Preliminary level 1/s5.html">5. The Butterfly and the Flowers</a>
+        <a href="../1. Preliminary level 1/s6.html">6. The Little Train</a>
+        <a href="../1. Preliminary level 1/s7.html">7. The Dog and the Bone</a>
+        <a href="../1. Preliminary level 1/s8.html">8. The Duck and the Water</a>
+        <a href="../1. Preliminary level 1/s9.html">9. The Moon and the Stars</a>
+        <a href="../1. Preliminary level 1/s10.html">10. The Little Bird</a>
+    </div>
+
+    <div class="category" onclick="toggleCategory(this)">
+        <span>Preliminary 2</span> <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="subcategories" id="intermediate_category"  style="display: none;">
+        <a href="../2. Preliminary level 2/s1.html">1.  The Bunny and the Carrot</a>
+        <a href="../2. Preliminary level 2/s2.html">2. The Cat and the Ball</a>
+        <a href="../2. Preliminary level 2/s3.html">3. The Bird and the Nest</a>
+        <a href="../2. Preliminary level 2/s4.html">4. The Golden Fish</a>
+        <a href="../2. Preliminary level 2/s5.html">5. The Butterfly and the Flowers</a>
+        <a href="../2. Preliminary level 2/s6.html">6. The Little Train</a>
+        <a href="../2. Preliminary level 2/s7.html">7. The Dog and the Bone</a>
+        <a href="../2. Preliminary level 2/s8.html">8. The Duck and the Water</a>
+        <a href="../2. Preliminary level 2/s9.html">9. The Moon and the Stars</a>
+        <a href="../2. Preliminary level 2/s10.html">10. The Little Bird</a>
+    </div>
+    
+    <div class="category" onclick="toggleCategory(this)">
+        <span>Level 1</span> <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="subcategories" id="advanced_category"  style="display: none;">
+        <a href="s1.html">1. The little bird and the storm</a>
+        <a href="s2.html">2. Amera's Garden</a>
+        <a href="s3.html">3. Lazy Lina</a>
+        <a href="s4.html">4. Timmy and the Rainbow</a>
+        <a href="s5.html">5. Billa's big balloon</a>
+        <a href="s6.html">6. Jenny’s New Shoes</a>
+        <a href="s7.html">7. The Sleepy Puppy</a>
+        <a href="s8.html">8. Daisy finds a friend</a>
+        <a href="s9.html">9. Sammy the Shy Snail</a>
+        <a href="s10.html"class="active">10. The Lost Teddy Bear</a>
+    </div>
+</div>
+
+<script src="../JS/main.js"></script>
+</body>
+</html>
